@@ -1,0 +1,152 @@
+body{
+    margin:0;
+    background-image: url("image/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Sunflower', sans-serif;
+    
+}
+
+.container{
+    background-color: white;
+    min-height: 100vh;
+    max-width: 1000px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.input-area {
+    position: relative;
+}
+
+#task-input {
+    transition: padding-top 0.2s ease, margin-top 0.2s ease;
+    width: 80%;
+    border: none;
+    border: 1px solid lightskyblue;
+}
+
+#task-input:focus {
+    outline: none;
+    border-bottom: 3px solid lightskyblue;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    transition: 0.5s;
+    padding-top: 35px;
+}
+
+#task-input + label > span {
+    font-weight: 300;
+    margin: 0;
+    position: absolute;
+    color: #8f8f8f;
+    font-size: 14px;
+    top: 6px;
+    left: 10px;
+    -webkit-transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+    transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+}
+
+#task-input:focus + label > span {
+    top: 0px;
+    color: #333;
+}
+
+#add-button {
+    border: none;
+    background-color: lightskyblue;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+}
+
+#add-button:active {
+    background-color: lightblue;
+    box-shadow: -1px 2px 5px rgba(81, 41, 10, 0.15),
+      0px 1px 1px rgba(81, 41, 10, 0.15);
+    transform: translateY(0.125rem);
+}
+
+#add-button:hover {
+    background-color: lightblue;
+}
+
+.task-area{
+    border: 1px solid lightgray;
+}
+
+.task-tabs{
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    position: relative;
+}
+.task-tabs div{
+    padding: 1em;
+}
+
+#under-line{
+    height: 4px;
+    background-color: lightskyblue;
+    position: absolute;
+    padding: 0px;
+    width: 60px;
+    left: 0px;
+    top: 52px;
+    transition: 0.3s;
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.task-done{
+    text-decoration: line-through;
+    background-color: lightgray;
+    transition: 0.3s;
+    padding: 0;
+}
+
+.task-tabs div{
+    cursor: pointer;
+}
+
+.task span {
+    padding: 1em;
+}
+
+.button-area{
+    display: flex;
+}
+.button-area button {
+    height: 100%;
+    border: none;
+    width: 5em;
+    margin: 0;
+    background-color: white;
+    transition: 0.5s;
+}
+  
+.button-area button :active {
+    position: relative;
+    top: 2px;
+}
+
+.button-area button:first-child:hover {
+    background-color: rgb(181, 228, 25);
+}
+
+.button-area button:nth-child(2):hover {
+    background-color: rgb(255, 0, 0, 0.3);
+ }
+
+.fa-check {
+    color: lightgreen;
+  }
+
+.fa-rotate-left{
+      color: lightslategray;
+  }
+
+.fa-trash-can{
+    color: red;
+}

@@ -1,6 +1,7 @@
 ## Todo-List
 ●일상에서 사용할 수 있는 ToDo List앱
 
+▶데모앱:https://kb-todo-list.netlify.app
 ## 기능
 * 유저는 할 일을 추가할 수 있다.
 * 각 할 일에 삭제와 체크버튼이 있다.
